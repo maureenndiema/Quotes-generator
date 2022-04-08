@@ -5,6 +5,9 @@ import { Directive, ElementRef} from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor(private elem: ElementRef) { }
+  constructor(private elem: ElementRef) { 
+    
+  }
+
 
 }
