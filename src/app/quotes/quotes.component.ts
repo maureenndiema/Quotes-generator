@@ -12,6 +12,7 @@ export class QuotesComponent implements OnInit {
     new Quote (2, 'Second Quote', 0, 0),
     new Quote (3, 'Third Quote', 0, 0),
     new Quote (4, 'Fourth Quote', 0, 0),
+    new Quote (5, 'Fifth Quote', 0, 0),
 
   ]
 
