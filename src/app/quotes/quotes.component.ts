@@ -15,7 +15,8 @@ export class QuotesComponent implements OnInit {
     new Quote (5, 'Fifth Quote', 0, 0),
 
   ]
-
+  arr: number[] = this.quotes.map(quote=>quote.upvotes)
+  highest = Math.max (...this.arr)
   constructor() { }
 
   ngOnInit(): void {
