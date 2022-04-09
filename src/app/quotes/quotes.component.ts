@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   public quotes: Quote[] =[
-    new Quote (1, 'First Quote', 1, 0, "description"),
-    new Quote (2, 'Second Quote', 0, 0, "description"),
-    new Quote (3, 'Third Quote', 0, 0,"description"),
-    new Quote (4, 'Fourth Quote', 0, 0,"description"),
-    new Quote (5, 'Fifth Quote', 0, 0, "description"),
+    new Quote (1, 'Do you the world will adjust', 1, 0, "description"),
+    new Quote (2, 'Learning to say No once in a while is an underrated life hack', 0, 0, "description"),
+    new Quote (3, 'The sun will rise again', 0, 0,"description"),
+    new Quote (4, 'The world owes you nothing', 0, 0,"description"),
+    new Quote (5, 'Be tru to yourself', 0, 0, "description"),
 
   ]
   arr: number[] = this.quotes.map(quote=>quote.upvotes)
