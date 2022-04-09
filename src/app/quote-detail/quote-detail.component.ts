@@ -17,6 +17,18 @@ export class QuoteDetailComponent implements OnInit {
     this.isVoted.emit(quoteDownVote);
   }
 
+  upVote(){
+    this.quote.upvotes+=1;
+  }
+
+  downVote () {
+    this.quote.downvotes+=1;
+  }
+
+  quoteDelete (UpVoted:boolean) {
+    this.isVoted.emit(UpVoted);
+  }
+
 
  
   constructor() { }
