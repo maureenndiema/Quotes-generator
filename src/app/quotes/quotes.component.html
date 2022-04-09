@@ -1,12 +1,13 @@
 <p>My Quotes</p>
-<ul *ngFor = 'let quote of quotes'>
+<ul *ngFor = 'let quote of quotes ;let i=index'>
     <div *ngIf='quote.upvotes == highest && quote.upvotes>0; then highlight else empty'></div>
     <ng-template #highlight>
-    <li appHighlight>{{quote.quote}} <span class="text-primary ml-2">Upvotes{{quote.upvotes}}</span> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span></li>   
+    <li appHighlight>{{quote.quote}} <span class="text-primary ml-2">Upvotes{{quote.upvotes}}</span> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span></li> 
+    <button (click)='toggleDetails(i)'> Description</button>  
     </ng-template>
     <ng-template #empty>
         <li >{{quote.quote}} <span class="text-primary ml-2">Upvotes{{quote.upvotes}}</span> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span>
-       <app-quote-detail [quote]="quote"></app-quote-detail>
+       <app-quote-detail *ngIf='quote.showDescription' [quote]="quote"></app-quote-detail>
         </li>
     </ng-template>
     
