@@ -2,13 +2,22 @@
 <ul *ngFor = 'let quote of quotes ;let i=index'>
     <div *ngIf='quote.upvotes == highest && quote.upvotes>0; then highlight else empty'></div>
     <ng-template #highlight>
-    <li appHighlight>{{quote.quote}} <span class="text-primary ml-2">Upvotes{{quote.upvotes}}</span> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span></li> 
+    <li appHighlight>{{quote.quote}} 
+        <button class="btn btn-primary m-1"><span class="text-warning ml-3">Upvotes{{quote.upvotes}}</span> </button>
+     <button class="btn btn-primary m-1"> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span></button>
+        <!-- <app-quote-detail *ngIf='quote.showDescription' [quote]="quote"(isVoted) = 'quoteupvotes($event,i)'></app-quote-detail>
+        <app-quote-detail *ngIf='quote.showDescription' [quote]="quote"(isVoted) = 'quotedownvotes($event,i)'></app-quote-detail> -->
+    </li> 
     <button (click)='toggleDetails(i)'> Description</button>  
     </ng-template>
     <ng-template #empty>
-        <li >{{quote.quote}} <span class="text-primary ml-2">Upvotes{{quote.upvotes}}</span> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span>
-       <app-quote-detail *ngIf='quote.showDescription' [quote]="quote"></app-quote-detail>
-        </li>
+    <li>
+    {{quote.quote}} 
+    <button class="btn btn-primary m-1"><span class="text-warning ml-3">Upvotes{{quote.upvotes}}</span> </button>
+     <button class="btn btn-primary m-1"> <span class="text-warning ml-3">Downvotes{{quote.downvotes}}</span></button>
+       <!-- <app-quote-detail *ngIf='quote.showDescription' [quote]="quote"(isVoted) = 'quoteupvotes($event,i)'></app-quote-detail>
+       <app-quote-detail *ngIf='quote.showDescription' [quote]="quote"(isVoted) = 'quotedownvotes($event,i)'></app-quote-detail> -->
+    </li>
     </ng-template>
     
 </ul>
