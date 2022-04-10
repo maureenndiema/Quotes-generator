@@ -30,9 +30,6 @@ export class QuoteDetailComponent implements OnInit {
     this.isDelete.emit(Delete);
   }
 
- 
-
- 
   constructor() { }
 
   ngOnInit(): void {

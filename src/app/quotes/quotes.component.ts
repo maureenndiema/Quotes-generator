@@ -40,20 +40,20 @@ export class QuotesComponent implements OnInit {
     }
   }
 
-  highlightHighest() {
-    /* function for getting quote with highest vote*/
-    let quotesUpvote = []
-    let highestUpVote: number
-    for (let j = 0; j < this.quotes.length; j++) {
-      quotesUpvote.push(this.quotes[j].upvotes)
-    }
+  // highlightHighest() {
+  //   /* function for getting quote with highest vote*/
+  //   let quotesUpvote = []
+  //   let highestUpVote: number
+  //   for (let j = 0; j < this.quotes.length; j++) {
+  //     quotesUpvote.push(this.quotes[j].upvotes)
+  //   }
 
-    quotesUpvote.sort(function (a, b) {
-      return b - a
-    })
-    highestUpVote = quotesUpvote[0]
-    return highestUpVote;
-  }
+  //   quotesUpvote.sort(function (a, b) {
+  //     return b - a
+  //   })
+  //   highestUpVote = quotesUpvote[0]
+  //   return highestUpVote;
+  // }
 
   preNum!:number
   lastNum!:number

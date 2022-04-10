@@ -17,9 +17,7 @@ export class QuoteFormComponent implements OnInit {
   alert('Thats an awesome quote!')
   }
   constructor() { }
-
-
-
+  
   ngOnInit(): void {
   }
 
