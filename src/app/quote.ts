@@ -9,7 +9,7 @@ export class Quote {
     downvotes: number;
     description : string;
     submitted_by: string;
-    postdate:Date;
+    postdate: Date;
 
     constructor (id:number, quote: string, author: string, upvotes: number, downvotes: number, description:string,submitted_by: string, postdate:Date){
     this.id = id;
