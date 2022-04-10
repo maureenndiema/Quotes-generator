@@ -6,6 +6,7 @@ import { Quote } from 'src/app/quote';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
+  [x: string]: any;
   @Input() quote!: Quote;
   @Output() isVoted = new EventEmitter<boolean>();
 
@@ -26,7 +27,7 @@ export class QuoteDetailComponent implements OnInit {
   }
 
   quoteDelete (UpVoted:boolean) {
-    this.isVoted.emit(UpVoted);
+    this['isUpVoted'].emit(UpVoted);
   }
 
 
