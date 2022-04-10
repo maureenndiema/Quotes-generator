@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HighlightDirective } from './highlight.directive';
-import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { QuoteDetailComponent } from './quotes/quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { DateCountPipe } from './date-count.pipe';
-import { LikeButtonComponent } from './like-button/like-button.component';
+import { LikeButtonComponent } from './quotes/quote-detail/like-button/like-button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { LikeButtonComponent } from './like-button/like-button.component';
     HighlightDirective,
     QuoteDetailComponent,
     QuoteFormComponent,
-    DateCountPipe
+    DateCountPipe,
+    LikeButtonComponent
   ],
   imports: [
     BrowserModule,
