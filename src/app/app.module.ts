@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteComponent } from './quotes/quotes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HighlightDirective } from './highlight.directive';
 import { QuoteDetailComponent } from './quotes/quote-detail/quote-detail.component';
@@ -15,7 +15,7 @@ import { LikeButtonComponent } from './quotes/quote-detail/like-button/like-butt
 @NgModule({
   declarations: [
     AppComponent,
-    QuotesComponent,
+    QuoteComponent,
     NavbarComponent,
     HighlightDirective,
     QuoteDetailComponent,

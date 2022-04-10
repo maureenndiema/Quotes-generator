@@ -5,7 +5,7 @@ import { Quote } from '../quote';
   templateUrl: './quotes.component.html',
   styleUrls: ['./quotes.component.css']
 })
-export class QuotesComponent implements OnInit {
+export class QuoteComponent implements OnInit {
 
   public quotes: Quote[] =[
     new Quote (1, 'Do you,the world will adjust',' By: Sophie Lu' ,0, 0, "description", "submitted_by:",new Date(2022, 4, 10)),
