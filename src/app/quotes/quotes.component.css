@@ -4,7 +4,7 @@ h1 {
     /* gives the header a gradient background */
     font-family: 'Poppins', sans-serif;
     background: rgb(175, 172, 221);
-    background: radial-gradient(circle, rgb(91, 85, 204) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background: radial-gradient(circle, rgb(91, 85, 204) 0%, rgb(156, 134, 9) 0%, rgb(68, 0, 255) 100%);
     color: rgb(86, 109, 182);
   }
   /* body{
