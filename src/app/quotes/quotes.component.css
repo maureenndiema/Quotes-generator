@@ -26,7 +26,7 @@ h6{
 
 }
 .btn-primary{
-    background-color: rgb(159, 129, 219); /* Green */
+    background-color: rgb(159, 129, 219); 
   border: none;
   color: white;
   padding: 5px 15px;
@@ -39,11 +39,44 @@ h6{
 }
 
 .card{
+  font-family: 'Poppins', sans-serif;
     width: 380px;
       padding: 20px;
-      border: 1px solid #c9c9c9;
+      border: 1px solid #301b63;
       display: flex;
+      /* background-color: transparent; */
 }
+
+.social-links .fa{
+    color: white;
+    height: 5%;
+}
+
+footer {
+    /* position: fixed; */
+    margin-bottom:0;
+    left: 0;
+    right: 0;
+    padding-top: 40px;
+    background-color: transparent;
+}
+  
+  .footer-content {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    border-radius: 0;
+    border: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 /* .quotes{
     display: flex;
     justify-content: space-between;

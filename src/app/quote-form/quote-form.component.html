@@ -6,7 +6,7 @@
   <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="title">
     </div>
-    <div class="form-group">
+    <div class="form-group font-family: 'Poppins', sans-serif;">
       <label for="quote-title" class="title">Quote Title:</label>
       <input type="text" class="form-control" placeholder="Title of Your Quote" id="quote" [(ngModel)]="newQuote.quote"
         name="quote" #name='ngModel' required>
@@ -30,7 +30,7 @@
         <p>Enter Your Author</p>
       </div>
     </div>
-    <div class="form-group">
+    <div class="form-group ">
       <label for="name" class="title">Your Name:</label>
       <input type="text" id="yourname" class="form-control" placeholder="Submitted by"
         [(ngModel)]="newQuote.submitted_by" name="yourname" #yourname='ngModel' required>
