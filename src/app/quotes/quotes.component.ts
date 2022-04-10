@@ -30,15 +30,56 @@ export class QuotesComponent implements OnInit {
     this.quotes.push(quote);
   }
 
-  deleteQuote(isUpVoted: any, index: any) {
-    if (isUpVoted) {
-      let toDelete = confirm(`Confirm you want to delete  ${this.quotes[index].quote} quote.`)
+  quoteDelete(isDelete: any, index: any) {
+    if (isDelete) {
+      let toDelete = confirm(`Confirm you want to delete  ${this.quotes[index].quote} ?`)
 
       if (toDelete) {
         this.quotes.splice(index, 1);
       }
     }
   }
+
+  highlightHighest() {
+    /* function for getting quote with highest vote*/
+    let quotesUpvote = []
+    let highestUpVote: number
+    for (let j = 0; j < this.quotes.length; j++) {
+      quotesUpvote.push(this.quotes[j].upvotes)
+    }
+
+    quotesUpvote.sort(function (a, b) {
+      return b - a
+    })
+    highestUpVote = quotesUpvote[0]
+    return highestUpVote;
+  }
+
+  preNum!:number
+  lastNum!:number
+  counter!:number
+
+  
+   
+  arry: number[] = this.quotes.map(function(quote){
+    return quote.upvotes
+  });
+
+  
+  highestv (){
+    this.preNum = 0
+    this.lastNum = 0
+
+    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
+      this.lastNum = this.quotes[this.counter].upvotes;
+      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    }
+    return  this.preNum
+  }
+
+  
+  
+
 
   constructor() { }
 

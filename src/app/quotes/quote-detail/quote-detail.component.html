@@ -11,8 +11,8 @@
 <app-like-button></app-like-button>
 
 <div class="card-footer text-muted">
-  <small>Submitted by &nbsp;&nbsp;<b style=color:white>{{quote.postdate}}</b> &nbsp;&nbsp;on
-    {{quote.postdate|date}} ({{quote.postdate|date}} day(s) ago)</small><br>
+  <small>Submitted by &nbsp;&nbsp;<b style=color:purple>{{quote.postdate|dateCount}}</b> &nbsp;&nbsp;on
+    {{quote.postdate|dateCount}}  day(s) ago)</small><br>
   <button class="btn" style="color: red;" (click)='quoteDelete(true)'><i
       class="fas fa-trash-alt"></i>&nbsp;Delete</button>
   <button class="btn" (click)="downVote()" appHighlightVote>{{quote.downvotes}}&nbsp;&nbsp;<i

@@ -4,14 +4,14 @@ h1 {
     /* gives the header a gradient background */
     background: rgb(2, 0, 36);
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    color: white;
+    color: rgb(9, 42, 151);
   }
   /* body{
       background-image: ;
   } */
 h6{
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(27, 5, 54);
     font-size: 1.2rem;
 }
 .description{
@@ -20,7 +20,31 @@ h6{
 }
 .container p{
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(10, 9, 41);
     font-size: 1.2rem;
 
 }
+.btn-primary{
+    background-color: rgb(159, 129, 219); /* Green */
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  
+}
+
+.card{
+    width: 380px;
+      padding: 20px;
+      border: 1px solid #c9c9c9;
+      display: flex;
+}
+/* .quotes{
+    display: flex;
+    justify-content: space-between;
+
+} */

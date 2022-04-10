@@ -8,14 +8,14 @@ import { Quote } from 'src/app/quote';
 export class QuoteDetailComponent implements OnInit {
   [x: string]: any;
   @Input() quote!: Quote;
-  @Output() isVoted = new EventEmitter<boolean>();
+  @Output() isDelete = new EventEmitter<boolean>();
 
   quoteUpVote(quoteUpVote:boolean){
-    this.isVoted.emit(quoteUpVote);
+    this.isDelete.emit(quoteUpVote);
   }
 
   quoteDownVote(quoteDownVote:boolean){
-    this.isVoted.emit(quoteDownVote);
+    this.isDelete.emit(quoteDownVote);
   }
 
   upVote(){
@@ -26,10 +26,11 @@ export class QuoteDetailComponent implements OnInit {
     this.quote.downvotes+=1;
   }
 
-  quoteDelete (UpVoted:boolean) {
-    this['isUpVoted'].emit(UpVoted);
+  quoteDelete (Delete:boolean) {
+    this.isDelete.emit(Delete);
   }
 
+ 
 
  
   constructor() { }
