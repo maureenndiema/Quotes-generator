@@ -78,6 +78,10 @@ footer {
   margin-right: 10px;
   margin-left: 10px;
 }
+cite{
+  color: #231636;
+  text-align: center;
+}
 
 /* .quotes{
     display: flex;

@@ -16,7 +16,7 @@
   <button class="btn" style="color: red;" (click)='quoteDelete(true)'><i
       class="fas fa-trash-alt"></i>&nbsp;Delete</button>
   <button class="btn" (click)="downVote()" appHighlightVote>{{quote.downvotes}}&nbsp;&nbsp;<i
-      class="fas fa-thumbs-down vote"></i></button>&nbsp;&nbsp;
+      class="fas fa-thumbs-down vote"></i>{{quote.downvotes}}</button>&nbsp;&nbsp;
   <button class="btn" (click)="upVote()" appHighlightVote>{{quote.upvotes}}&nbsp;&nbsp;<i
-      class="fas fa-thumbs-up vote"></i></button>&nbsp;&nbsp;
+    class="fas fa-thumbs-up vote"> {{quote.upvotes}}</i></button>&nbsp;&nbsp;
 </div>
